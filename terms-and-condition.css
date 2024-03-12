@@ -1,0 +1,274 @@
+:root {
+    --transition: all 0.5s ease-in-out;
+    --bg-color: #161616;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FEFEFE;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+.container {
+    display: block;
+}
+
+/* SCROLL BAR CSS STARTED */
+::-webkit-scrollbar {
+    background: black;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(154, 217, 83, 1);
+    border-radius: 10px;
+}
+
+/* SCROLL BAR CSS ENDED */
+
+/* NAV BAR CSS STARTED*/
+.nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: #000000;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.nav-logo-img {
+    width: 155px;
+    height: 32px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-item {
+    padding: 23px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #9AD953;
+}
+
+.nav-btns {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    padding: 8px 16px;
+    background-color: black;
+}
+
+.login-arrow:hover {
+    color: #9AD953;
+}
+
+.login-link:hover {
+    color: #9AD953;
+}
+
+.signup-link {
+    padding: 8px 16px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.signup-link:hover {
+    background-color: #F5C06D;
+    color: #141414;
+}
+
+.signup-arrow {
+    color: #141414;
+}
+
+.signup-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* NAV BAR CSS ENDED */
+
+/* TERMS AND CONDITIONS CONTEXT CSS STARTED */
+.main-card {
+    background-color: #1F1F1F;
+    padding: 60px;
+    margin: 150px;
+    border-radius: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-card-heading-container h2 {
+    margin: 0px 0px 60px;
+    font-size: 40px;
+}
+
+.main-card-list li {
+    color: #B6B6B6;
+    margin: 16px;
+    font-size: 18px;
+}
+
+.individual-parts {
+    padding-bottom: 50px;
+}
+
+.main-card-subheading {
+    font-size: 24px;
+    margin: 0px 0px 20px;
+}
+
+.main-card-para {
+    font-size: 18px;
+    margin: 18px 0px 0px;
+    color: #B6B6B6;
+}
+
+/* TERMS AND CONDITIONS CONTEXT CSS ENDED */
+
+
+/* FOOTER CSS STARTED */
+.footer {
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.banner {
+    padding: 20px 60px;
+    justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    background-color: #161616;
+    border-radius: 12px;
+    padding: 0px 0px 0px 80px;
+}
+
+.img {
+    width: 282px;
+    height: 255px;
+    border-radius: 130px;
+    animation: rotate-animation 25s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img {
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 0px 12px;
+    margin: 24px 0px 0px;
+}
+
+.banner-text h2 {
+    font-size: 40px;
+    color: #FEFEFE;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin: 20px 0px 0px;
+    color: #B6B6B6;
+}
+
+.banner-img {
+    margin: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 40px;
+    align-items: right;
+    justify-content: right;
+}
+
+.banner-img button {
+    border: none;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    transform: translate(-211px, -122px);
+}
+
+.foot-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.register-link {
+    padding: 8px 20px;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.register-arrow {
+    color: #141414;
+}
+
+.register-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+.footer1 {
+    display: flex;
+    line-height: 2;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.nav-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 32px;
+}
+
+.nav-lists {
+    color: #B6B6B6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER CSS ENDED */

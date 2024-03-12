@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/title-logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/a39473920b.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html"><img class="nav-logo-img" src="./assets/logo.png" alt="logo" /></a>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="index.html" class="nav-link list-link">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="market.html" class="nav-link list-link">Markets</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="about.html" class="nav-link list-link">About</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="education.html" class="nav-link list-link">Education</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="terms-and-conditions.html" class="nav-link list-link">Legal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <a class="nav-link login-link" href="login.html">
+                    Login
+                    <i class="login-arrow fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="nav-link signup-link" href="login.html">
+                    Sign Up
+                    <i class="signup-arrow fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Trading Expansion -->
+            <div class="trading-expansion-container">
+                <div class="trading-expansion">
+                    <div class="trading-expansion-part1">
+                        <div class="trading-expansion-content">
+                            <span class="trading-platforms green">Trading platforms</span>
+                            <h1>Trade Abundance</h1>
+                            <p>Covesting allows you to automatically copy top performing traders and achieve the returns
+                            </p>
+                            <div class="trading-expansion-button">
+                                <a class="start-trading-link" href="login.html">
+                                    Start Trading
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                </a>
+                                <a class="demo-account-link" href="login.html">
+                                    <i class="account-arrow fa-solid fa-arrow-right"></i>
+                                    Try Demo Account
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trading-expansion-part2">
+                        <img class="trading-expansion-image" src="./assets/hero_thumb.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TRADING VIEW WIDGET -->
+            <div class="tradingview-widget-container">
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                            "symbols": [
+                                {
+                                    "proName": "BITSTAMP:BTCUSD",
+                                    "title": "Bitcoin"
+                                },
+                                {
+                                    "proName": "BITSTAMP:ETHUSD",
+                                    "title": "Ethereum"
+                                },
+                                {
+                                    "description": "india",
+                                    "proName": "BSE:SENSEX"
+                                },
+                                {
+                                    "description": "BAJAJ AUTO",
+                                    "proName": "NSE:BAJAJ_AUTO"
+                                },
+                                {
+                                    "description": "BTC",
+                                    "proName": "BITSTAMP:BTCUSD"
+                                }
+                            ],
+
+                                "showSymbolLogo": true,
+                                    "colorTheme": "dark",
+                                        "isTransparent": false,
+                                            "displayMode": "compact",
+                                                "locale": "in",
+                                                    "autoHeight": true
+                        }
+                    </script>
+            </div>
+
+            <!-- Trade on -->
+            <div class="trade-on">
+                <div class="trade-on-image">
+                    <img class="trade-on-img" src="./assets/trade_on2.webp" alt="">
+                </div>
+                <div class="trade-on-content">
+                    <span>Trade On</span>
+                    <h3>InvestPro</h3>
+                    <p>
+                        Trading in financial markets involves a wide range of strategies that traders employ to make
+                        informed decisions. From trading to swing trading and long-term investing, each strategy has its
+                        own set of principles and risk factors.
+                    </p>
+                    <ul>
+                        <li class="trade-on-list-item">
+                            <i class="check-mark-list fa-regular fa-circle-check"></i>
+                            Charts trading
+                        </li>
+                        <li class="trade-on-list-item">
+                            <i class="check-mark-list fa-regular fa-circle-check"></i>
+                            Understanding Trading Strategies
+                        </li>
+                        <li class="trade-on-list-item">
+                            <i class="check-mark-list fa-regular fa-circle-check"></i>
+                            Risk Management in Trading
+                        </li>
+                        <li class="trade-on-list-item">
+                            <i class="check-mark-list fa-regular fa-circle-check"></i>
+                            Technical vs. Fundamental Analysis
+                        </li>
+                    </ul>
+                    <button>
+                        <a class="trade-on-link sign-up-link" href="login.html">
+                            Sign Up Now
+                            <i class="sign-up-arrow fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Currenecies Heatmap -->
+            <div class="heatmap-container">
+                <h3>Low spreads on more than 150 instruments</h3>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                        {
+                            "width": "100%",
+                                "height": "500",
+                                    "currencies": [
+                                        "EUR",
+                                        "USD",
+                                        "JPY",
+                                        "GBP",
+                                        "INR",
+                                        "AUD",
+                                        "CAD",
+                                        "NZD",
+                                        "CNY"
+
+                                    ],
+                                        "isTransparent": false,
+                                            "colorTheme": "dark",
+                                                "locale": "in"
+                        }
+                    </script>
+            </div>
+
+            <!-- Individual stocks chart -->
+            <div class="individual-stocks-container">
+                <h3>Stock Market Overview</h3>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                        {
+                            "symbols": [
+                                [
+                                    "Apple",
+                                    "AAPL|1D|INR"
+                                ],
+                                [
+                                    "Google",
+                                    "GOOGL|1D|INR"
+                                ],
+                                [
+                                    "Microsoft",
+                                    "MSFT|1D|INR"
+                                ],
+                                [
+                                    "BSE:SENSEX|1D|INR"
+                                ]
+                            ],
+                                "chartOnly": false,
+                                    "width": "100%",
+                                        "height": "500",
+                                            "locale": "in",
+                                                "colorTheme": "dark",
+                                                    "autosize": true,
+                                                        "showVolume": false,
+                                                            "showMA": false,
+                                                                "hideDateRanges": false,
+                                                                    "hideMarketStatus": false,
+                                                                        "hideSymbolLogo": false,
+                                                                            "scalePosition": "right",
+                                                                                "scaleMode": "Normal",
+                                                                                    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                                                        "fontSize": "10",
+                                                                                            "noTimeScale": false,
+                                                                                                "valuesTracking": "1",
+                                                                                                    "changeMode": "price-and-percent",
+                                                                                                        "chartType": "area",
+                                                                                                            "maLineColor": "#2962FF",
+                                                                                                                "maLineWidth": 1,
+                                                                                                                    "maLength": 9,
+                                                                                                                        "lineWidth": 2,
+                                                                                                                            "lineType": 0,
+                                                                                                                                "dateRanges": [
+                                                                                                                                    "1d|1",
+                                                                                                                                    "1m|30",
+                                                                                                                                    "3m|60",
+                                                                                                                                    "12m|1D",
+                                                                                                                                    "60m|1W",
+                                                                                                                                    "all|1M"
+                                                                                                                                ]
+                        }
+                    </script>
+            </div>
+
+            <!-- Our Team -->
+            <div class="our-team">
+                <div class="our-team-text">
+                    <span>Team</span>
+                    <h3>Our Team</h3>
+                    <p>Trading has always been a passion, but it wasn't until I refined my strategy and embraced risk
+                        management.</p>
+                </div>
+                <div class="our-team-cards">
+                    <div class="JapneetKaur">
+                        <div class="our-team-card our-team-card1">
+                            <img class="our-team-card-img" src="./assets/JapneetKaur.jpg" alt="">
+                            <div class="our-team-card-text">
+                                <h5>Japneet Kaur</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/Japneet001">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Jkaur0102">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100089160572696">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/japneet0102/">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="JapneetSingh">
+                        <div class="our-team-card our-team-card2">
+                            <img class="our-team-card-img" src="./assets/JapneetSingh.jpg" alt="">
+                            <div class="our-team-card-text">
+                                <h5>Japneet Singh</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/japneetsinghhh">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/japneeetsinghh">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="JasneetArora">
+                        <div class="our-team-card our-team-card3">
+                            <img class="our-team-card-img" src="./assets/JasneetArora.jpg" alt="">
+                            <div class="our-team-card-text">
+                                <h5>Jasneet Arora</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/jasneet-arora27">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/jasneet_arora27">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/jasneet_arora27">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faqs -->
+            <div class="faqs">
+                <span>Faq's</span>
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-flex">
+                    <div class="faq-container">
+                        <div class="faq">
+                            <div class="question">
+                                <h3>What is Trading?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>How can I get started with trading?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>How can I stay updated on market news and trends?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>What are different types of trading?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>Is Trading suitable for everyone?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="question">
+                                <h3>What is fundamental analysis?</h3>
+                                <i class="fa-arrow fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="answer">
+                                <p>Trading involves buying and selling
+                                    financial instruments like stocks advantage of price fluctuations in these assets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/faq.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>Start earning with only $20</h2>
+                    <p>Try our super easy portal for free</p>
+                </div>
+                <div class="banner-img">
+                    <img class="img" alt="vector" loading="lazy" src="./assets/star_focus.webp">
+                    <button>
+                        <a class="foot-link register-link" href="login.html">
+                            Register
+                            <i class="signup-arrow fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="footer1">
+            <div class="four-col">
+                <ul class="list-style">
+                    <li class="nav-head">
+                        <h4>Quick Links</h4>
+                    </li>
+                    <li><a class="nav-lists" href="market.html">Market</a></li>
+                    <li><a class="nav-lists" href="education.html">Education</a></li>
+                    <li><a class="nav-lists" href="#">Support</a></li>
+                    <li><a class="nav-lists" href="terms-and-conditions.html">Legal Docs</a></li>
+                </ul>
+            </div>
+            <div class="four-col">
+                <ul class="list-style">
+                    <li class="nav-head">
+                        <h4>Company</h4>
+                    </li>
+                    <li><a class="nav-lists" href="about.html">About</a></li>
+                    <li><a class="nav-lists" href="#">Blog</a></li>
+                    <li><a class="nav-lists" href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="four-col">
+                <ul class="list-style">
+                    <li class="nav-head">
+                        <h4>Legal</h4>
+                    </li>
+                    <li><a class="nav-lists" href="terms-and-conditions.html">Terms and Conditions</a></li>
+                    <li><a class="nav-lists" href="#">Privacy Policy</a></li>
+                    <li><a class="nav-lists" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="four-col">
+                <ul class="list-style">
+                    <li class="nav-head">
+                        <h4>Contact Us</h4>
+                    </li>
+                    <li><a class="nav-lists" href="#">info@gmail.com</a></li>
+                    <li><a class="nav-lists" href="#">+0123-456-789</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

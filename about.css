@@ -1,0 +1,712 @@
+/* By Japneet Kaur */
+
+:root {
+    --transition: all 0.5s ease-in-out;
+    --bg-color: #161616;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FEFEFE;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    display: block;
+}
+
+/* SCROLL BAR CSS STARTED */
+::-webkit-scrollbar {
+    background: black;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(154, 217, 83, 1);
+    border-radius: 10px;
+}
+
+/* SCROLL BAR CSS ENDED */
+
+
+/* NAV BAR CSS STARTED*/
+.nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.nav-logo-img {
+    width: 155px;
+    height: 32px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-item {
+    padding: 23px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #9AD953;
+}
+
+.nav-btns {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    padding: 8px 16px;
+    background-color: black;
+}
+
+.login-arrow:hover {
+    color: #9AD953;
+}
+
+.login-link:hover {
+    color: #9AD953;
+}
+
+.signup-link {
+    padding: 8px 16px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.signup-link:hover {
+    background-color: #F5C06D;
+    color: #141414;
+}
+
+.signup-arrow {
+    color: #141414;
+}
+
+.signup-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* NAV BAR CSS ENDED */
+
+/* BUY SELL CONTAINER CSS STARTED*/
+.buy-sell {
+    background: url(./assets/banner.png) no-repeat 50%;
+    background-size: cover;
+    padding: 125px 0px;
+}
+
+.buy-sell-text {
+    color: #FEFEFE;
+    margin: 0px 67px;
+    padding: 80px 12px 0px;
+}
+
+.buy-sell-heading {
+    font-size: 40px;
+    margin: 0px 0px 16px;
+    padding: 0px;
+    display: block;
+    transition: var(--transition);
+    line-height: 120%;
+}
+
+.buy-sell-list {
+    list-style: none;
+    display: flex;
+}
+
+.buy-sell-list-item {
+    font-size: 18px;
+    padding: 3px;
+}
+
+.buy-sell-list-item a {
+    text-decoration: none;
+}
+
+.inactive {
+    color: #FFFFFF;
+}
+
+.green {
+    color: #9AD953;
+}
+
+.fa-angles-right {
+    font-size: 14px;
+}
+
+/* BUY SELL CONTAINER CSS ENDED */
+
+
+/* OUR COMPANY STORY CSS STARTED */
+.our-company-story {
+    display: flex;
+    padding: 120px 90px;
+    background-color: var(--bg-color);
+}
+
+.company-story-image-container {
+    padding: 0px 12px;
+}
+
+.company-story-image {
+    width: 526px;
+    height: 394px;
+    color: transparent;
+    border-radius: 12px;
+}
+
+.company-story-text-container {
+    padding: 0px 12px;
+}
+
+.company-story-what {
+    margin: 0px 20px 30px;
+}
+
+.our-company-span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.company-story-what h3 {
+    font-size: 32px;
+    margin: 20px 0px 12px;
+}
+
+.company-story-what p {
+    font-size: 18px;
+    color: #B6B6B6;
+}
+
+.company-story-who {
+    display: flex;
+}
+
+.company-story-who-link-container {
+    margin: 30px 24px 0px 0px;
+    width: 480px;
+    height: 128px;
+    border-radius: 50%;
+    display: inline-flex;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #9AD953;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-story-who-link-container:hover {
+    background-color: #F5C06D;
+}
+
+.company-story-who-link {
+    text-decoration: none;
+    display: center;
+    flex-direction: column;
+    position: relative;
+    color: #141414;
+    text-align: center;
+    align-items: center;
+}
+
+.company-story-who-link span {
+    color: #141414;
+    justify-content: center;
+    padding: 0px 0px 0px 20px;
+    font-size: 16px;
+}
+
+.fa-arrow-up {
+    color: #141414;
+    padding: 35px 0px 4px 30px;
+    font-size: 20px;
+}
+
+.fa-rotate-by {
+    --fa-rotate-angle: 45deg;
+}
+
+.company-story-who-text h3 {
+    font-size: 32px;
+    margin: 0px 0px 12px;
+}
+
+.company-story-who-text p {
+    font-size: 18px;
+    color: #B6B6B6;
+}
+
+/* OUR COMPANY STORY CSS ENDED */
+
+/* TRADING VIEW WIDGET CSS STARTED */
+.tradingview-widget-container {
+    background-color: var(--bg-color);
+}
+
+/* TRADING VIEW WIDGET CSS ENDED */
+
+/* OUR MISSION CSS STARTED */
+.our-mission {
+    background-color: #141414;
+    padding: 20px 60px 0px 90px;
+}
+
+.our-mission-text {
+    display: flex;
+    gap: 40px;
+}
+
+.our-mission-heading {
+    padding: 0px 12px;
+}
+
+.our-mission-heading span {
+    margin: 0px 0px 20px;
+    color: #F5C06D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.our-mission-heading h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 20px 0px 0px 0px;
+}
+
+.our-mission-para p {
+    margin: 0px 0px 0px 100px;
+    line-height: 150%;
+    padding: 20px 12px;
+    font-size: 20px;
+    color: #B6B6B6;
+}
+
+.right {
+    text-align: right;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    margin: 30px 0px 0px 0px;
+}
+
+.individual-card-container {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 12px;
+    padding: 60px 36px;
+    background-color: #1F1F1F;
+}
+
+.card span {
+    background-color: #141414;
+    padding: 16px;
+    margin: 0px 200px;
+    border-radius: 50%;
+}
+
+.card h4 {
+    color: #FEFEFE;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #B6B6B6;
+}
+
+.fa-bitcoin-sign {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+.fa-user-shield {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+.fa-podcast {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+/* OUR MISSION CSS ENDED */
+
+
+/* OUR TEAM CSS STARTED */
+.our-team {
+    background-color: #141414;
+    padding: 60px 0px 60px 0px;
+}
+
+.our-team-text {
+    text-align: center;
+}
+
+.our-team-text span {
+    color: #9AD953;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 20px;
+}
+
+.our-team-text h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+}
+
+.our-team-text p {
+    font-size: 18px;
+    margin: 20px 256.562px;
+    color: #B6B6B6;
+}
+
+.our-team-cards {
+    display: flex;
+    margin: 0px 0px 0px 70px;
+}
+
+.our-team-card-text {
+    text-align: center;
+    line-height: 150%;
+    padding: 20px;
+}
+
+.our-team-card-text ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+
+.fa-github:hover {
+    color: #898989;
+    font-size: 24px;
+}
+
+.fa-x-twitter:hover {
+    font-size: 24px;
+}
+
+.fa-facebook-f:hover {
+    color: #6192fa;
+    font-size: 24px;
+}
+
+.fa-instagram:hover {
+    color: #c577ac;
+    font-size: 24px;
+}
+
+.JapneetKaur {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.JapneetSingh {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.JasneetArora {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.our-team-card {
+    background-color: #1F1F1F;
+    border-radius: 12px;
+}
+
+.our-team-card h5 {
+    font-size: 20px;
+    margin: 0px 0px 16px;
+    padding: 0px 0px 16px;
+}
+
+.our-team-card-img {
+    height: 330px;
+    width: 356px;
+    object-fit: contain;
+}
+
+/* OUR TEAM CSS ENDED */
+
+
+/* FOOTER CSS STARTED */
+.footer {
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.banner {
+    padding: 20px 60px;
+    justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    background-color: #161616;
+    border-radius: 12px;
+    padding: 0px 0px 0px 80px;
+}
+
+.img {
+    width: 282px;
+    height: 255px;
+    border-radius: 130px;
+    animation: rotate-animation 25s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img {
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 0px 12px;
+    margin: 24px 0px 0px;
+}
+
+.banner-text h2 {
+    font-size: 40px;
+    color: #FEFEFE;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin: 20px 0px 0px;
+    color: #B6B6B6;
+}
+
+.banner-img {
+    margin: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 40px;
+    align-items: right;
+    justify-content: right;
+}
+
+.banner-img button {
+    border: none;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    transform: translate(-211px, -122px);
+}
+
+.foot-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.register-link {
+    padding: 8px 20px;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.register-arrow {
+    color: #141414;
+}
+
+.register-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+.footer1 {
+    display: flex;
+    line-height: 2;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.nav-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 32px;
+}
+
+.nav-lists {
+    color: #B6B6B6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER CSS ENDED */
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .nav-list-item {
+        padding: 10px;
+    }
+
+    .nav-btns {
+        font-size: 14px;
+    }
+
+    .nav-logo-img {
+        width: 120px;
+        height: auto;
+    }
+
+    .container {
+        padding: 0px 10px;
+    }
+
+    .buy-sell {
+        padding: 80px 0px;
+    }
+
+    .buy-sell-text {
+        margin: 0px;
+        padding: 40px 10px 0px;
+        text-align: center;
+    }
+
+    .buy-sell-heading {
+        font-size: 30px;
+    }
+
+    .our-company-story {
+        padding: 60px 20px;
+        flex-direction: column;
+    }
+
+    .company-story-image {
+        width: 100%;
+    }
+
+    .company-story-text-container {
+        padding: 0px 10px;
+    }
+
+    .company-story-what h3,
+    .company-story-who-text h3 {
+        font-size: 24px;
+    }
+
+    .our-mission {
+        padding: 20px;
+        padding-top: 0px;
+        /* width: 100%;
+        height: 71px; */
+    }
+
+    .our-mission-heading h3 {
+        font-size: 28px;
+    }
+
+    .our-mission-para p {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 100%;
+    }
+
+    .individual-card-container {
+        margin: 20px 0px;
+        padding: 0px 10px;
+    }
+
+    .card {
+        padding: 40px 20px;
+    }
+
+    .our-team {
+        padding: 40px 10px;
+    }
+
+    .our-team-text h3 {
+        font-size: 28px;
+    }
+
+    .our-team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav-list-item {
+        padding: 15px;
+    }
+
+    .nav-btns {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,540 @@
+:root {
+    --transition: all 0.5s ease-in-out;
+    --bg-color: #161616;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FEFEFE;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    display: block;
+}
+
+/* SCROLL BAR CSS STARTED */
+::-webkit-scrollbar {
+    background: black;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(154, 217, 83, 1);
+    border-radius: 10px;
+}
+
+/* SCROLL BAR CSS ENDED */
+
+
+/* NAV BAR CSS STARTED*/
+.nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.nav-logo-img {
+    width: 155px;
+    height: 32px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-item {
+    padding: 23px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #9AD953;
+}
+
+.nav-btns {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    padding: 8px 16px;
+    background-color: black;
+}
+
+.login-arrow:hover {
+    color: #9AD953;
+}
+
+.login-link:hover {
+    color: #9AD953;
+}
+
+.signup-link {
+    padding: 8px 16px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.signup-link:hover {
+    background-color: #F5C06D;
+    color: #141414;
+}
+
+.signup-arrow {
+    color: #141414;
+}
+
+.signup-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* NAV BAR CSS ENDED */
+
+/* BUY SELL CONTAINER CSS STARTED*/
+.buy-sell {
+    background: url(./assets/banner.png) no-repeat 50%;
+    background-size: cover;
+    padding: 125px 0px;
+}
+
+.buy-sell-text {
+    color: #FEFEFE;
+    margin: 0px 67px;
+    padding: 80px 12px 0px;
+}
+
+.buy-sell-heading {
+    font-size: 40px;
+    margin: 0px 0px 16px;
+    padding: 0px;
+    display: block;
+    transition: var(--transition);
+    line-height: 120%;
+}
+
+.buy-sell-list {
+    list-style: none;
+    display: flex;
+}
+
+.buy-sell-list-item {
+    font-size: 18px;
+    padding: 3px;
+}
+
+.buy-sell-list-item a {
+    text-decoration: none;
+}
+
+.inactive {
+    color: #FFFFFF;
+}
+
+.green {
+    color: #9AD953;
+}
+
+.fa-angles-right {
+    font-size: 14px;
+}
+
+/* BUY SELL CONTAINER CSS ENDED */
+
+/* TRADER ACADEMY CSS STARTED */
+.trader-academy {
+    background-color: #141414;
+    display: flex;
+    padding: 120px 80px 40px;
+}
+
+.trader-academy-image {
+    padding-right: 34px;
+}
+
+.trader-academy-img {
+    width: 546px;
+    height: 476.46px;
+}
+
+.trader-academy-content>span {
+    color: #9AD953;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    display: block;
+}
+
+.trader-academy-content h4 {
+    color: #FEFEFE;
+    font-size: 24px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.trader-academy-content p {
+    color: #B6B6B6;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 150%;
+}
+
+.trader-academy-span-content {
+    display: flex;
+    margin: 24px 0px 0px;
+}
+
+.trader-academy-span {
+    color: #141414;
+    font-size: 16px;
+    padding: 4px 8px;
+    background-color: #F5C06D;
+    border-radius: 16px;
+}
+
+.trader-arrow {
+    color: #9AD953;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.trader-academy-content button {
+    margin: 28px 0px 0px;
+    border: none;
+    border-radius: 50%;
+}
+
+.trader-academy-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.start-learning-link {
+    padding: 8px 20px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.start-learning-link:hover {
+    background-color: #F5C06D;
+}
+
+
+.start-learning-arrow {
+    color: #141414;
+}
+
+.start-learning-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* TRADER ACADEMY CSS ENDED */
+
+/* FAQs CSS STARTED */
+.faqs {
+    color: #fff;
+    background-color: #141414;
+    padding: 50px;
+}
+
+.faqs span {
+    color: #9AD953;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    display: block;
+    text-align: center;
+}
+
+.faqs>h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.faq-flex {
+    display: flex;
+}
+
+.faq-container {
+    padding: 20px;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    border-bottom: 0.25px solid #b1b1b1;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 20px;
+    color: #FEFEFE;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 14px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #B6B6B6;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i {
+    transform: rotate(180deg);
+}
+
+.fa-arrow {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* FAQs CSS ENDED */
+
+
+/* CARDS CSS STARTED */
+
+.cards {
+    background-color: #141414;
+    padding: 20px 60px 20px 90px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+
+.individual-card-container {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 12px;
+    padding: 60px 36px;
+    background-color: #1F1F1F;
+}
+
+.card span {
+    background-color: #141414;
+    padding: 16px;
+    margin: 0px 200px;
+    border-radius: 50%;
+}
+
+.card h4 {
+    color: #FEFEFE;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #B6B6B6;
+    margin: 0px 0px 20px 0px;
+}
+
+.enter-course {
+    color: #FEFEFE;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid #9AD953;
+}
+
+.enter-course-arrow {
+    color: #9AD953;
+    font-weight: 500;
+}
+
+.fa-user {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+.fa-tools {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+.fa-stock {
+    color: #9AD953;
+    font-size: 20px;
+}
+
+/* CARDS CSS ENDED */
+
+/* FOOTER CSS STARTED */
+.footer {
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.banner {
+    padding: 20px 60px;
+    justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    background-color: #161616;
+    border-radius: 12px;
+    padding: 0px 0px 0px 80px;
+}
+
+.img {
+    width: 282px;
+    height: 255px;
+    border-radius: 130px;
+    animation: rotate-animation 25s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img {
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 0px 12px;
+    margin: 24px 0px 0px;
+}
+
+.banner-text h2 {
+    font-size: 40px;
+    color: #FEFEFE;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin: 20px 0px 0px;
+    color: #B6B6B6;
+}
+
+.banner-img {
+    margin: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 40px;
+    align-items: right;
+    justify-content: right;
+}
+
+.banner-img button {
+    border: none;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    transform: translate(-211px, -122px);
+}
+
+.foot-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.register-link {
+    padding: 8px 20px;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.register-arrow {
+    color: #141414;
+}
+
+.register-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+.footer1 {
+    display: flex;
+    line-height: 2;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.nav-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 32px;
+}
+
+.nav-lists {
+    color: #B6B6B6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER CSS ENDED */

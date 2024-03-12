@@ -1,0 +1,651 @@
+:root {
+    --transition: all 0.5s ease-in-out;
+    --bg-color: #161616;
+    --fa-rotate-angle-signup: -45deg;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FEFEFE;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    display: block;
+}
+
+/* SCROLL BAR CSS STARTED */
+::-webkit-scrollbar {
+    background: black;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(154, 217, 83, 1);
+    border-radius: 10px;
+}
+
+/* SCROLL BAR CSS ENDED */
+
+
+/* NAV BAR CSS STARTED*/
+.nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: #000000;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.nav-logo-img {
+    width: 155px;
+    height: 32px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-item {
+    padding: 23px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #9AD953;
+}
+
+.nav-btns {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    padding: 8px 16px;
+    background-color: black;
+}
+
+.login-arrow:hover {
+    color: #9AD953;
+}
+
+.login-link:hover {
+    color: #9AD953;
+}
+
+.signup-link {
+    padding: 8px 16px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.signup-link:hover {
+    background-color: #F5C06D;
+    color: #141414;
+}
+
+.signup-arrow {
+    color: #141414;
+}
+
+.signup-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* NAV BAR CSS ENDED */
+
+/* TRADING EXPANSION CSS STARTED */
+.trading-expansion-container {
+    background-image: url(./assets/hero_bg_vector.png);
+}
+
+.trading-expansion {
+    margin: 0px 67px 0px;
+    padding: 120px 12px 0px;
+    display: flex;
+}
+
+.trading-expansion-part1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.trading-platforms {
+    color: #9AD953;
+}
+
+.trading-expansion-content {
+    padding: 80px 12px;
+}
+
+.trading-expansion-content span {
+    font-size: 20px;
+    margin: 0px 0px 12px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.trading-expansion-content h1 {
+    font-size: 72px;
+    margin: 0px 0px 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.trading-expansion-content p {
+    font-size: 18px;
+    color: #B6B6B6;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.trading-expansion-button {
+    margin: 40px 0px 0px;
+}
+
+.start-trading-link {
+    margin-right: 60px;
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.start-trading-link:hover {
+    background-color: #F5C06D;
+    color: #141414;
+}
+
+.fa-arrow-trend-up {
+    color: #141414;
+}
+
+.demo-account-link {
+    text-decoration: none;
+    color: #F5C06D;
+    font-size: 20px;
+    border-bottom: 2px solid #F5C06D;
+}
+
+.account-arrow {
+    color: #F5C06D;
+}
+
+.trading-expansion-image {
+    width: 546px;
+}
+
+/* TRADING EXPANSION CSS ENDED */
+
+/* TRADING VIEW WIDGET CSS STARTED */
+.tradingview-widget-container {
+    background-color: var(--bg-color);
+}
+
+/* TRADING VIEW WIDGET CSS ENDED */
+
+/* TRADE ON CSS STARTED */
+.trade-on {
+    background-color: #141414;
+    display: flex;
+    padding: 120px 80px 40px;
+    border-bottom: 0.25px solid #797979AC;
+}
+
+.trade-on-image {
+    padding-right: 34px;
+}
+
+.trade-on-img {
+    width: 546px;
+    height: 476.46px;
+}
+
+.trade-on-content span {
+    color: #9AD953;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    display: block;
+}
+
+.trade-on-content h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.trade-on-content p {
+    color: #B6B6B6;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 150%;
+}
+
+.trade-on-content ul {
+    list-style: none;
+    margin: 24px 0px 0px;
+}
+
+.trade-on-list-item {
+    color: #B6B6B6;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0px 0px 14px;
+    /* gap: 12px; */
+}
+
+.check-mark-list {
+    color: #9AD953;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.trade-on button {
+    margin: 28px 0px 0px;
+    border: none;
+    border-radius: 50%;
+}
+
+.trade-on-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sign-up-link {
+    padding: 8px 20px;
+    background-color: #9AD953;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.sign-up-link:hover {
+    background-color: #F5C06D;
+}
+
+
+.sign-up-arrow {
+    color: #141414;
+}
+
+.sign-up-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+/* TRADE ON CSS ENDED */
+
+
+/* HEATMAP CSS STARTED */
+.heatmap-container {
+    padding: 60px 60px 20px;
+    background-color: #141414;
+}
+
+.heatmap-container h3 {
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 0px 0px 30px;
+}
+
+/* HEATMAP CSS ENDED */
+
+/* INDIVIDUAL STOCKS CHART CSS STARTED */
+.individual-stocks-container {
+    padding: 80px 60px 40px;
+    background-color: #141414;
+    border-bottom: 0.25px solid #797979AC;
+
+}
+
+.individual-stocks-container h3 {
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 0px 0px 30px;
+}
+
+/* INDIVIDUAL STOCKS CHART CSS ENDED */
+
+
+/* OUR TEAM CSS STARTED */
+.our-team {
+    background-color: #141414;
+    padding: 60px 0px 60px 0px;
+}
+
+.our-team-text {
+    text-align: center;
+}
+
+.our-team-text span {
+    color: #9AD953;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 20px;
+}
+
+.our-team-text h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+}
+
+.our-team-text p {
+    font-size: 18px;
+    margin: 20px 256.562px;
+    color: #B6B6B6;
+}
+
+.our-team-cards {
+    display: flex;
+    margin: 0px 0px 0px 70px;
+}
+
+.our-team-card-text {
+    text-align: center;
+    line-height: 150%;
+    padding: 20px;
+}
+
+.our-team-card-text ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+
+.fa-github:hover {
+    color: #898989;
+    font-size: 24px;
+}
+
+.fa-x-twitter:hover {
+    font-size: 24px;
+}
+
+.fa-facebook-f:hover {
+    color: #6192fa;
+    font-size: 24px;
+}
+
+.fa-instagram:hover {
+    color: #c577ac;
+    font-size: 24px;
+}
+
+.JapneetKaur {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.JapneetSingh {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.JasneetArora {
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+
+.our-team-card {
+    background-color: #1F1F1F;
+    border-radius: 12px;
+}
+
+.our-team-card h5 {
+    font-size: 20px;
+    margin: 0px 0px 16px;
+    padding: 0px 0px 16px;
+}
+
+.our-team-card-img {
+    height: 330px;
+    width: 356px;
+    object-fit: contain;
+}
+
+/* OUR TEAM CSS ENDED */
+
+/* FAQs CSS STARTED */
+.faqs {
+    color: #fff;
+    background-color: #141414;
+    padding: 50px;
+}
+
+.faqs span {
+    color: #9AD953;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    display: block;
+    text-align: center;
+}
+
+.faqs>h3 {
+    color: #FEFEFE;
+    font-size: 32px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.faq-flex {
+    display: flex;
+}
+
+.faq-container {
+    padding: 20px;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    border-bottom: 0.25px solid #b1b1b1;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 20px;
+    color: #FEFEFE;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 14px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #B6B6B6;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i {
+    transform: rotate(180deg);
+}
+
+.fa-arrow {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* FAQs CSS ENDED */
+
+
+/* FOOTER CSS STARTED */
+.footer {
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.banner {
+    padding: 20px 60px;
+    justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    background-color: #161616;
+    border-radius: 12px;
+    padding: 0px 0px 0px 80px;
+}
+
+.img {
+    width: 282px;
+    height: 255px;
+    border-radius: 130px;
+    animation: rotate-animation 25s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img {
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 0px 12px;
+    margin: 24px 0px 0px;
+}
+
+.banner-text h2 {
+    font-size: 40px;
+    color: #FEFEFE;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin: 20px 0px 0px;
+    color: #B6B6B6;
+}
+
+.banner-img {
+    margin: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 40px;
+    align-items: right;
+    justify-content: right;
+}
+
+.banner-img button {
+    border: none;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    transform: translate(-211px, -122px);
+}
+
+.foot-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEFEFE;
+    font-weight: 700;
+}
+
+.register-link {
+    padding: 8px 20px;
+    background-color: #F5C06D;
+    border-radius: 14px;
+    color: #141414;
+}
+
+.register-arrow {
+    color: #141414;
+}
+
+.register-arrow:hover {
+    --fa-rotate-angle: -45deg;
+}
+
+.footer1 {
+    display: flex;
+    line-height: 2;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.nav-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 32px;
+}
+
+.nav-lists {
+    color: #B6B6B6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER CSS ENDED */
